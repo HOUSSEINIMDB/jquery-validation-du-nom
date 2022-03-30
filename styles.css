@@ -1,0 +1,28 @@
+.divs{
+    height:250px;
+    width :250px;
+    border: 4px solid cyan;
+    border-radius: 6px;
+    background-color: indigo;
+}
+.divs2{
+  height:40px;
+  width :200px;
+  border: 4px solid gold;
+  border-radius: 6px;
+  background-color: silver;
+}
+
+.inputs, .paragraphs{
+    color:aliceblue;
+    background-color: rgb(156, 219, 255);
+}
+
+.buttons{
+  background-color:  rgb(17, 147, 228);
+  border-radius: 10px;
+  border:none;
+  color:white;
+  font-size:medium;
+  margin-top: auto;
+}

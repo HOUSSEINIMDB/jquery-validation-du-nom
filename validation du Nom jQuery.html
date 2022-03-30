@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <form action="">
+            <div class="divs">
+                <h3><em>Validation du nom avec jQuery</em></h3>
+                <input type="text" class="inputs" id="inp1"> <br><br>
+                <button type="button" class="buttons" id="but1">Tester</button><br><br>
+                <button type="reset" class="buttons">Reessayer</button>
+                <p class="paragraphs" id="par1"></p>
+            </div>
+        </form>
+    </center>
+    <script>
+        $(document).ready(function(){
+        $("#but1").click(function(event) {
+            event.preventDefault();
+        if ( $("#inp1").val().match('^[a-zA-Z]{3,16}$') ) {
+            $(".divs").css("border-color","lime");  
+            //alert( "VALIDE" );        
+        }
+        else {
+            $(".divs").css("border-color","red");  
+            //alert("INVALIDE"); 
+        }
+      })});
+    </script>
+</body>
+
+</html>
